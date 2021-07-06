@@ -1,7 +1,7 @@
 (ns maria.curriculum)
 
 (defn repo-path [path]
-  (js/encodeURIComponent (str "https://raw.githubusercontent.com/mhuebert/maria/master/" path)))
+  (js/encodeURIComponent (str "https://raw.githubusercontent.com/andrewwhitehouse/maria/main/" path)))
 
 (def modules
   [["intro" "Learn Clojure with Shapes" (repo-path "curriculum/Learn Clojure with Shapes.cljs")]
@@ -14,7 +14,8 @@
    ["shannons-entropy" "Shannon's Entropy" (repo-path "curriculum/Shannon's Entropy.cljs")]
    ["cb-intro" "Learn Clojure with Shapes (ClojureBridge)" (repo-path "curriculum/Learn Clojure with Shapes (ClojureBridge).cljs")]
    ["cb-london" "London ClojureBridge" (js/encodeURIComponent "https://gist.githubusercontent.com/londonclojurians/9afbc2adf3638f1bcf6a6c08b6f33226/raw/clojurebridge-shapes.cljs")]
-   ["cb-coaches" "ClojureBridge Coaches' Copy" (repo-path "curriculum/ClojureBridge Coaches' Copy.cljs")]])
+   ["cb-coaches" "ClojureBridge Coaches' Copy" (repo-path "curriculum/ClojureBridge Coaches' Copy.cljs")]
+   ["tiny-piano" "Tiny Piano" (repo-path "curriculum/Tiny Piano.cljs")]])
 
 (def owner {:username  "curriculum"
             :local-url "/curriculum"})
